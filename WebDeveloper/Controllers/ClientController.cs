@@ -4,7 +4,6 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using WebDeveloper.DataAccess;
-
 namespace WebDeveloper.Controllers
 {
     public class ClientController : Controller
