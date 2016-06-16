@@ -31,23 +31,21 @@ namespace WebDeveloper.Controllers
             return View();
         }
 
-        public ActionResult Edit()
+        public ActionResult Edit(int id)
         {
             return View(new Client());
 
         }
         [HttpPost]
-        public ActionResult Edit(Client client)
+        public ActionResult Edit()
         {
             if (ModelState.IsValid)
             {
-
-                _client.update(client);
                 return RedirectToAction("Index");
             }
             return View();
         }
-        public ActionResult Delete()
+        public ActionResult Delete(int id)
         {
             return View(new Client());
 
