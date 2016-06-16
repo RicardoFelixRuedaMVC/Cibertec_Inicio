@@ -31,35 +31,40 @@ namespace WebDeveloper.Controllers
             return View();
         }
 
+
+
         public ActionResult Edit(int id)
         {
-            return View(new Client());
+            var client = _client.GetClient(id);
+            if (client == null)
+                RedirectToAction("Index");
+            return View(client);
 
         }
         [HttpPost]
-        public ActionResult Edit()
+        public ActionResult Edit(Client client)
         {
-            if (ModelState.IsValid)
-            {
+            if (_client.update(client) > 0)
                 return RedirectToAction("Index");
-            }
-            return View();
+            return View(client);
         }
+
+
+
         public ActionResult Delete(int id)
         {
-            return View(new Client());
-
+            
+            var client = _client.GetClient(id);
+            if (client == null)
+               RedirectToAction("Index");
+             return View(client);
         }
         [HttpPost]
         public ActionResult Delete(Client client)
         {
-            if (ModelState.IsValid)
-            {
-
-                _client.Delete(client);
+            if (_client.Delete(client)>0)
                 return RedirectToAction("Index");
-            }
-            return View();
+            return View(client);
         }
 
 
