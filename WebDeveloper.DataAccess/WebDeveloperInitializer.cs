@@ -24,6 +24,39 @@ namespace WebDeveloper.DataAccess
             clients.ForEach(c => context.Clients.Add(c));
             context.SaveChanges();
 
+            var products = new List<Product>
+            {
+                new Product {Code="Z001",  Name="Zapatitos para bb azul", DateExpired=Convert.ToDateTime("12-06-2018 00:00:00")},
+                new Product {Code="Z002",  Name="Zapatitos para bb Rojo", DateExpired=Convert.ToDateTime("12-06-2018 00:00:00")},
+
+                
+            };
+
+            products.ForEach(c => context.Product.Add(c));
+            context.SaveChanges();
+
+            var Categorys = new List<Category>
+            {
+                new Category {NameCategory="Zapatitos"},
+                new Category {NameCategory="Chompas"},
+                new Category {NameCategory="Gorros"}
+               
+            };
+
+            Categorys.ForEach(c => context.Category.Add(c));
+            context.SaveChanges();
+
+            var Stores = new List<Store>
+            {
+                new Store {Code="S001",Name="San borja"}
+
+            };
+
+            Stores.ForEach(c => context.Store.Add(c));
+            context.SaveChanges();
+
+
+
         }
     }
 }
