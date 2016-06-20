@@ -3,25 +3,18 @@ using System.Linq;
 using WebDeveloper.Model;
 namespace WebDeveloper.DataAccess
 {
-    public class ClientData
+    public class ClientData:BaseDataAccess<Client>
     {
-        public List<Client> GetFakeData()
+        public Client GetClient(int id)
         {
-            return new List<Client>
-        {
-            new Client {id=1,Name="Juan", LastName="Perez" },
-            new Client {id=2,Name="Raul", LastName="Ruidiaz" }
-        };
 
-
+            using (var dbcontext = new WebContextDb())
+                return dbcontext.Clients.FirstOrDefault(x => x.id == id);
+            
         }
-        public List<Client> GetList()
-        {
-            using (var dbContext = new WebContextDb())
-            {
-                return dbContext.Clients.ToList();
-
-            }
-        }
+       
+        
+      
+       
     }
 }
