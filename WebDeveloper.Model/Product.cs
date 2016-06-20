@@ -21,8 +21,6 @@ namespace WebDeveloper.Model
         public DateTime DateExpired { get; set; }
 
 
-        [Display(Name = "State:")]
-        [Required(ErrorMessage = "The State is required")]
-        public bool State { get; set; }
+       
     }
 }

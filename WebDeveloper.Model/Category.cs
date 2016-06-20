@@ -8,11 +8,9 @@ namespace WebDeveloper.Model
 
         [Display(Name = "Category Name:")]
         [Required(ErrorMessage = "This field is required")]
-        public string Name { get; set; }
+        public string NameCategory { get; set; }
 
 
-        [Display(Name = "state:")]
-        [Required(ErrorMessage = "The state is required")]
-        public bool state { get; set; }
+        
     }
 }

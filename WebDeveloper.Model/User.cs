@@ -16,8 +16,6 @@ namespace WebDeveloper.Model
         [Required(ErrorMessage = "The Password is required")]
         public string Password { get; set; }
 
-        [Display(Name = "State:")]
-        [Required(ErrorMessage = "The State is required")]
-        public bool State { get; set; }
+      
     }
 }

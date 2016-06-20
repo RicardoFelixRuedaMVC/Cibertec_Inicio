@@ -3,7 +3,7 @@ using WebDeveloper.Model;
 
 namespace WebDeveloper.DataAccess
 {
-    public class CategoryData: BaseDataAccess<Store>
+    public class CategoryData: BaseDataAccess<Category>
     {
         public Category GetCategory(int id)
         {

@@ -21,8 +21,6 @@ namespace WebDeveloper.Model
         [Required(ErrorMessage = "The Name Store is required")]
         public string Name { get; set; }
 
-        [Display(Name = "State:")]
-        [Required(ErrorMessage = "The State is required")]
-        public bool State { get; set; }
+       
     }
 }
