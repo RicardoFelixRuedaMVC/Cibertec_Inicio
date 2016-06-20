@@ -24,8 +24,7 @@ namespace WebDeveloper.Controllers
         {
             if (ModelState.IsValid)
             {
-
-                _Category.update(Category);
+                _Category.Add(Category);
                 return RedirectToAction("Index");
             }
             return View();
