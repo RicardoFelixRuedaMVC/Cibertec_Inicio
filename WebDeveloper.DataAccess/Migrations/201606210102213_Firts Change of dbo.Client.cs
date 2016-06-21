@@ -9,14 +9,14 @@ namespace WebDeveloper.DataAccess.Migrations
         {
             //AddColumn("dbo.Client", "Apellidos", c => c.String(nullable: false));
             //DropColumn("dbo.Client", "LastName");
-            RenameColumn("dbo.Client", "Apellidos", "LastName");
+            RenameColumn("dbo.Client", "LastName", "Apellidos");
         }
         
         public override void Down()
         {
             //AddColumn("dbo.Client", "LastName", c => c.String(nullable: false));
             //DropColumn("dbo.Client", "Apellidos");
-            RenameColumn("dbo.Client", "LastName", "Apellidos");
+            RenameColumn("dbo.Client", "Apellidos", "LastName");
         }
     }
 }
