@@ -26,11 +26,18 @@
                         @Html.ActionLink("Contact", "Contact", "Home")
                     *@
                     <ul class="nav navbar-nav">
-                        <li><a href="Client">Client</a></li>
+                        <li>@Html.ActionLink("Home","Index","Home")</li>
+                        <li>@Html.ActionLink("Client", "Index", "Client")</li>
+                        <li>@Html.ActionLink("Product", "Index", "Product")</li>
+                        <li>@Html.ActionLink("Category", "Index", "Category")</li>
+                        <li>@Html.ActionLink("Store", "Index", "Store")</li>
+                        <li>@Html.ActionLink("User", "Index", "User")</li>
+
+                         @*<li><a href="Client">Client</a></li>
                         <li><a href="Product">Product</a></li>
                         <li><a href="Category">Category</a></li>
                         <li><a href="Store">Store</a></li>
-                        <li><a href="User">User</a></li>
+                        <li><a href="User">User</a></li>*@
                     </ul>
                 </nav>
             </div>
