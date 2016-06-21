@@ -169,6 +169,7 @@
     <Compile Include="Controllers\ClientController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\RazorController.cs" />
     <Compile Include="Controllers\StoreController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
@@ -243,6 +244,7 @@
     <Content Include="Views\Client\Edit.cshtml" />
     <Content Include="Views\Category\Create.cshtml" />
     <Content Include="Views\Store\Index.cshtml" />
+    <Content Include="Views\Razor\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
