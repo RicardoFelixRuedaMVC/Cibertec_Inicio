@@ -17,6 +17,7 @@ namespace WebDeveloper.Model
         public string Name { get; set; }
 
         [Display(Name = "Date Expired:")]
+        [DataType(DataType.DateTime)]
         [Required(ErrorMessage = "The Date Expired is required")]
         public DateTime DateExpired { get; set; }
 

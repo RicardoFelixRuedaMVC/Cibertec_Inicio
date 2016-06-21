@@ -13,7 +13,7 @@ namespace WebDeveloper.Model
         
         [Display(Name = "Last Name:")]
         [Required(ErrorMessage = "The Last Name is required")]
-        public string LastName { get; set; }
+        public string Apellidos { get; set; }
     }
 
 
