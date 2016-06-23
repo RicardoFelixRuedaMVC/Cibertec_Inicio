@@ -16,10 +16,16 @@ namespace WebDeveloper.Controllers
             {
                 id = 1,
                 Name = "Carlos",
-                LastName = "Perez"
-
+                LastName = "Perez",
+                DateCreation = DateTime.Today
             };
-            return View();
+            return View(client);
+        }
+        public ActionResult Product()
+        {
+
+            var productData = new DataAccess.ProductData();
+            return View(productData.GetFakeProducts());
         }
     }
 }

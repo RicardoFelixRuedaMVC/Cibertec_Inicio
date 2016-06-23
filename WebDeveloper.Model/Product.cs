@@ -7,21 +7,15 @@ namespace WebDeveloper.Model
         public int id { get; set; }
 
 
-        [Display(Name = "Code Product:")]
-        [Required(ErrorMessage = "This Code Product is required")]
-        public string Code { get; set; }
+        [Display(Name = "Description Product:")]
+        [Required(ErrorMessage = "This Description Product is required")]
+        public string Description { get; set; }
 
 
-        [Display(Name = "Name Product:")]
-        [Required(ErrorMessage = "The Name Product is required")]
-        public string Name { get; set; }
+        [Display(Name = "Price Product:")]
+        [Required(ErrorMessage = "The price Product is required")]
+        public double Price { get; set; }
 
-        [Display(Name = "Date Expired:")]
-        [DataType(DataType.DateTime)]
-        [Required(ErrorMessage = "The Date Expired is required")]
-        public DateTime DateExpired { get; set; }
-
-
-       
+        public DateTime? DateCreation { get; set; }
     }
 }
