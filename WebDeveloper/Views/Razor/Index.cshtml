@@ -1,7 +1,23 @@
 ﻿
+@model IEnumerable<WebDeveloper.Model.Client>
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Cliente!";
 }
 
-<h2>Index</h2>
-
+<h2>@ViewBag.Title</h2>
+<br />
+@foreach (var item in Model)
+{
+    <div class="col-lg-4">
+        <label>Id:</label> @item.id <br />
+        <label>Code:</label> @item.Name <br />
+      
+          @if (item.DateCreation == null)
+        {
+            <label>Exp. Date: - </label>
+        }
+        else {
+            <label>Exp. Date:</label> @item.DateCreation.Value.ToString("dd/MM/yyyy")
+        }
+    </div>
+}

@@ -33,7 +33,7 @@ namespace WebDeveloper.Helpers
         }
         private static string ResultDateCreation(DateTime? dateCreation)
         {
-           return dateCreation == null?  "<span>Not definition!!!</span>": $"<span>{dateCreation}</span>"; 
+           return dateCreation == null?  "<span>Not definition!!!</span>": $"<span>{dateCreation.Value.ToShortDateString()}</span>"; 
         }
     }
 }
