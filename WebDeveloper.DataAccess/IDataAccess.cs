@@ -13,7 +13,6 @@ namespace WebDeveloper.DataAccess
         int Add(T entity);
         int Delete(T entity);
         int update(T entity);
-
-
+        object GetClient(int id);
     }
 }

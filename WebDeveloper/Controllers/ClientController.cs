@@ -7,8 +7,15 @@ namespace WebDeveloper.Controllers
 {
     public class ClientController : Controller
     {
-        private ClientData _client = new ClientData();
+        //private ClientData _client = new ClientData();
         // GET: Client
+       //private ClientData _client;
+        private IDataAccess<Client> _client;
+
+        public ClientController(IDataAccess<Client> client)
+        {
+            _client = client;
+        }
         public ActionResult Index()
         {
             var client = new ClientData();
@@ -35,7 +42,7 @@ namespace WebDeveloper.Controllers
 
         public ActionResult Edit(int id)
         {
-            var client = _client.GetClient(id);
+          var client = _client.GetClient(id);
             if (client == null)
                 RedirectToAction("Index");
             return View(client);

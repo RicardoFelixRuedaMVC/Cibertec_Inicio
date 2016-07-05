@@ -30,6 +30,11 @@ namespace WebDeveloper.DataAccess
 
         }
 
+        public object GetClient(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<T> GetList()
         {
             using (var dbContext = new WebContextDb())
