@@ -21,7 +21,7 @@ namespace WebDeveloper.DataAccess
             {
                 new Product {id=1,Description="Cristal",Price=3.0,DateCreation=DateTime.Now },
                 new Product {id=1,Description="Pilsen",Price=3.0,DateCreation=DateTime.Now },
-                new Product {id=1,Description="Pilsen",Price=0.0,DateCreation=null } 
+                new Product {id=1,Description="Pilsen",Price=0.0,DateCreation=null }
             };
 
 
