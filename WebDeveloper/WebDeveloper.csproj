@@ -257,11 +257,11 @@
     <Content Include="Views\Razor\Product.cshtml" />
     <Content Include="Views\Razor\Index.cshtml" />
     <Content Include="Views\Razor\EntryDate.cshtml" />
+    <Content Include="Views\Product\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Product\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
